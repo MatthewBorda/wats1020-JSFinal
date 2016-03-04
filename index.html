@@ -12,7 +12,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="iPicture2/css/iPicture.css">
+        <link rel="stylesheet" href="css/animate.css">
 
         <style>
             body {
@@ -62,48 +62,100 @@
       </div>
     </nav>
 <!--   Full width carousel  -->
-    <div class="container carouselContainer">
-      
-       
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
+<div class="container main-container">
+  
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="img_chania.jpg" alt="Chania">
-    </div>
+    <div id="carousel-example-generic" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				 <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				 <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      </ol>
 
-    <div class="item">
-      <img src="img_chania2.jpg" alt="Chania">
-    </div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
 
-    <div class="item">
-      <img src="img_flower.jpg" alt="Flower">
-    </div>
+        <!-- First slide -->
+        <div class="item active">
+			<img src="img/carousel/background-texture-1014963_1280.jpg" alt="" style="width: 100%; height: 300px;">
+          <div class="carousel-caption">
+            <h3 data-animation="animated fadeIn">
+              This is the caption for slide 1
+            </h3>
+            <h3 data-animation="animated fadeIn">
+              This is the caption for slide 1
+            </h3>
+            <button class="btn btn-primary btn-lg" data-animation="animated fadeIn">Button</button>
+          </div>
+        </div> <!-- /.item -->
 
-    <div class="item">
-      <img src="img_flower2.jpg" alt="Flower">
-    </div>
-  </div>
+        <!-- Second slide -->
+        <div class="item">
+        		<img src="img/carousel/stairs-1036882_1280.jpg" alt="" style="width: 100%; height: 300px;">
+          <div class="carousel-caption">
+            <h3 data-animation="animated fadeIn">
+              This is the caption for slide 1
+            </h3>
+            <h3 data-animation="animated fadeIn">
+              This is the caption for slide 1
+            </h3>
+            <button class="btn btn-primary btn-lg" data-animation="animated fadeIn">Button</button>
+          </div>
+        </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-      </div> 
+        <!-- Third slide -->
+        <div class="item">
+          		<img src="img/carousel/tools-1083796_1280.jpg" alt="" style="width: 100%; height: 300px;">
+          <div class="carousel-caption">
+            <h3 data-animation="animated fadeIn">
+              This is the caption for slide 1
+            </h3>
+            <h3 data-animation="animated fadeIn">
+              This is the caption for slide 1
+            </h3>
+            <button class="btn btn-primary btn-lg" data-animation="animated fadeIn">Button</button>
+          </div>
+        </div>
+  <div class="item">
+          		<img src="img/carousel/wood-1213664_1280.jpg" alt="" style="width: 100%; height: 300px;">
+          <div class="carousel-caption">
+            <h3 data-animation="animated fadeIn">
+              This is the caption for slide 1
+            </h3>
+            <h3 data-animation="animated fadeIn">
+              This is the caption for slide 1
+            </h3>
+            <button class="btn btn-primary btn-lg" data-animation="animated fadeIn">Button</button>
+          </div>
+        </div>
+		  <div class="item">
+	<img src="img/carousel/wood-618673_1280.jpg" alt="" style="width: 100%; height: 300px;">
+          <div class="carousel-caption">
+            <h3 data-animation="animated fadeIn">
+              Custom designed furniture
+            </h3>
+
+            <button class="btn btn-primary btn-lg" data-animation="animated fadeIn">Button</button>
+          </div>
+        </div>		
+      </div><!-- /.carousel-inner -->
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+</div><!-- /.container -->
+
 <!--  Portolio      -->
         <div class="container portfolio" id="portfolio">
 <div class="controls">
@@ -151,17 +203,31 @@
           </div>
 <!--  About us      -->
   <div class="container about">
-          
-          
+  <h1>
+		 About us
+		</h1>        
+     <h2>
+			 Sheep Dog Woodworking?     
+		</h2>
+		<p>
+				Dutch grew up on his family's sheep ranch in northern Nevada. One day, he grandfather's favorite working dog, a border collie name El Capitan, escaped during a trade show and &ldquo; made friends	&rdquo; with a pure bred show dog. A few months later, the family recieved a delivery of somewhat purebred border collies puppies. With no place to keep them, Dutch worked throughout the night using scrap wood and materials gathered from the ranch and by morning, El Capitan and his new family had a new home and Dutch had his calling. Though the family would soon sell the ranch and leave Dutch’s makeshift dog house behind, Dutch would never lose his passion for woodworking. Dutch, along with El Capitan’s great grandson Txakur, continue that tradition to this day making handcrafted, one of a kind custom wood furniture. 
+		</p>
+		   <h2>
+			Our Philosophy   
+		</h2>
+		<blockquote>
+			<p>
+			“A determined soul will do more with a rusty monkey wrench than a loafer will accomplish with all the tools in a machine shop.”</p>
+			<footer>Robert Hughes (1938-2012), Australian art critic </footer>
+			</blockquote>
+		<p>
+	We craft all our products by hand. Each piece of wood that comes through our shop is planed, cut, sanded, and built by hand. We become intimately close with each of projects and provide a quality finished product, regardless of size, that rivals any machined product imaginable. While our work is found coast to coast and worldwide, we are committed to supporting local businesses in the Puget Sound area. When we say we work with local mills, salvage yards, and suppliers, we mean it. All our partners suppliers are Puget Sound. Select the markers below to learn more.
+		</p>
    <!--  map-->
     <div class="container map">
       <div class="row">
   
       <div id="map" style="height:110%;">
-        <h2>Map </h2>
-        <p>
-When we say we work with local mills, salvage yards, and suppliers, we mean it. All our partners suppliers are Puget Sound. Select the markers below to learn more. 
-        </p>
 
   
         <div id="map-container" >
