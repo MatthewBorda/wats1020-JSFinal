@@ -79,3 +79,22 @@ h1 {
 .p a {
   text-decoration: underline;
 }
+.noselect {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+#miniClndr .clndr-grid .days-of-the-week .header-day {
+    float: left;
+    width: 14.2857%;
+    padding: 14px;
+    text-align: center;
+    background: black;
+}
+
+.header-day {
+	
+}

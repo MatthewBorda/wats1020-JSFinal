@@ -183,7 +183,7 @@
 <!--  About us      -->
   <div class="container about">
           
-          
+			</div>     
    <!--  map-->
     <div class="container map">
       <div class="row">
@@ -204,22 +204,64 @@ When we say we work with local mills, salvage yards, and suppliers, we mean it. 
     
     <div class="container blog">
     </div>
+   
+<div id="miniClndr">
+			</div>
 
+
+			
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<!--    
+			<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <!--iPicture          -->
       
-        <script type="text/javascript" src="iPicture2/js/jquery.ipicture.js"></script>
-<!--         <script type="text/javascript" src="iPicture2/js/jquery-1.8.3.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script> -->
+
+		<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
 
       <script src="js/vendor/bootstrap.min.js"></script>
        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script> 
+				
 			<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-        <script src="js/main.js"></script>
+		
+<!-- 		<script src="js/moment.min.js"></script> -->
+<!-- 			<script src="js/underscore.min.js"></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+
+			<script src="js/clndr.js"></script>
+
+			<script src="js/main.js"></script>
+			<script id="calendar-template" type="text/template">
+  
+<div class="clndr-grid">
+  <div class="days-of-the-week clearfix">
+    <% _.each(daysOfTheWeek, function(day) { %>
+      <div class="header-day"><%= day %></div>
+    <% }); %>
+  </div>
+  <div class="days clearfix">
+    <% _.each(days, function(day) { %>
+      <div class="<%= day.classes %>" id="<%= day.id %>">
+        <span class="day-number"><%= day.day %></span>
+      </div>
+    <% }); %>
+  </div>
+</div>
+<div class="event-listing">
+  <div class="event-listing-title">EVENTS THIS MONTH</div>
+  <% _.each(eventsThisMonth, function(event) { %>
+      <div class="event-item">
+        <div class="event-item-name"><%= event.name %></div>
+        <div class="event-item-location"><%= event.location %></div>
+      </div>
+    <% }); %>
+</div>
+</script>
     </body>
   <footer>
 <!--Who we are
