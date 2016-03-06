@@ -32,7 +32,7 @@ var marker = L.marker([51.5, -0.09]).addTo(map);
   //http://www.seconduse.com/
 // http://ewsalvage.com/  
 //   http://ballardreuse.com/
-<<<<<<< HEAD
+
   
 // carousel
 var $myCarousel = $('#carousel-example-generic');
@@ -77,7 +77,7 @@ $myCarousel.on('slide.bs.carousel', function (e) {
   doAnimations($animatingElems);
 });
 	
-=======
+
 /* Demo Scripts for Bootstrap Carousel and Animate.css article
 * on SitePoint by Maria Antonietta Perna
 */
@@ -160,8 +160,7 @@ daysOfTheWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
 // TODO: Add 2 layers to your map you have visuals. Use the Open Street Maps
 // tiles served through the MapQuest CDN. Consult this example to set up
 // the map tiles layers:
->>>>>>> master
 
-});
+
 
 
