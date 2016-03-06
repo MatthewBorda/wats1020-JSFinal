@@ -1,11 +1,4 @@
-/* Begin by adding your on ready handler here, and then create the
-   rest of your functions inside the on ready handler.
 
-   (Note that you do not need to manually call Bootstrap functions in
-   your Javascript because Bootstrap will automatically recognize your
-   HTML structures and invoke the proper JS code accordingly. Be sure
-   to reference the Bootstrap documentation.)
-*/
 $( document  ).ready(function() {
   // Instantiate MixItUp:
 
@@ -39,6 +32,7 @@ var marker = L.marker([51.5, -0.09]).addTo(map);
   //http://www.seconduse.com/
 // http://ewsalvage.com/  
 //   http://ballardreuse.com/
+<<<<<<< HEAD
   
 // carousel
 var $myCarousel = $('#carousel-example-generic');
@@ -83,6 +77,90 @@ $myCarousel.on('slide.bs.carousel', function (e) {
   doAnimations($animatingElems);
 });
 	
+=======
+/* Demo Scripts for Bootstrap Carousel and Animate.css article
+* on SitePoint by Maria Antonietta Perna
+*/
+(function( $ ) {
+
+	//Function to animate slider captions 
+	function doAnimations( elems ) {
+		//Cache the animationend event in a variable
+		var animEndEv = 'webkitAnimationEnd animationend';
+		
+		elems.each(function () {
+			var $this = $(this),
+				$animationType = $this.data('animation');
+			$this.addClass($animationType).one(animEndEv, function () {
+				$this.removeClass($animationType);
+			});
+		});
+	}
+	
+	//Variables on page load 
+	var $myCarousel = $('#carousel-example-generic'),
+		$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+		
+	//Initialize carousel 
+	$myCarousel.carousel();
+	
+	//Animate captions in first slide on page load 
+	doAnimations($firstAnimatingElems);
+	
+	//Pause carousel  
+	$myCarousel.carousel('pause');
+	
+	
+	//Other slides to be animated on carousel slide event 
+	$myCarousel.on('slide.bs.carousel', function (e) {
+		var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+		doAnimations($animatingElems);
+	});  
+	
+})(jQuery);  
+
+//   var currentMonth = moment().format('YYYY-MM');
+//   var nextMonth    = moment().add('month', 1).format('YYYY-MM');
+//   var events = [
+//     { date: currentMonth + '-' + '10', title: 'Persian Kitten Auction', location: 'Center for Beautiful Cats' },
+//     { date: currentMonth + '-' + '19', title: 'Cat Frisbee', location: 'Jefferson Park' },
+//     { date: currentMonth + '-' + '23', title: 'Kitten Demonstration', location: 'Center for Beautiful Cats' },
+//     { date: nextMonth + '-' + '07',    title: 'Small Cat Photo Session', location: 'Center for Cat Photography' }
+//   ];
+
+// $('#mini-clndr').clndr( {
+//     template: $('#calendar-template').html(),
+//     events: events,
+//     clickEvents: {
+//       click: function(target) {
+//         if(target.events.length) {
+//           var daysContainer = $('#mini-clndr').find('.days-container');
+//           daysContainer.toggleClass('show-events', true);
+//           $('#mini-clndr').find('.x-button').click( function() {
+//             daysContainer.toggleClass('show-events', false);
+//           });
+//         }
+//       }
+//     },
+//     adjacentDaysChangeMonth: true
+//   });
+$('#miniClndr').clndr({
+startWithMonth:moment(),
+daysOfTheWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+	  events: [
+    {
+        date: "2016-03-29",
+        and: "anything else",
+    }
+]
+});
+
+
+});
+// TODO: Add 2 layers to your map you have visuals. Use the Open Street Maps
+// tiles served through the MapQuest CDN. Consult this example to set up
+// the map tiles layers:
+>>>>>>> master
 
 });
 
