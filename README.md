@@ -1,5 +1,6 @@
 *Remaining todo list
 
 Footer
-Navbar collapse
+
+Navbar navigation
 
