@@ -10,13 +10,17 @@ $color4: #503d42; //rgba(80, 61, 66, 100)
 $color5: #453f3c; //rgba(69, 63, 60, 100) */
 body {
 	background: #dce0d9;
+	font-family: 'Rokkitt', serif;
+	
 }
 .navbar {
 	background:#dce0d9;
 }
 
-#map-container { height: 180px; }
-#map { height: 180px; }
+#map-container { height: 350px;}
+#map { height: 350px; 
+			width: 80%;
+			margin:auto;}
 
 
 #Container .mix{
@@ -125,8 +129,12 @@ h1 {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: bold;
-}
+	font-family: 'Holtwood One SC', serif;
 
+}
+h2 {
+	text-align:center;
+}
 .p {
   padding-top: 125px;
   text-align: center;
@@ -164,4 +172,21 @@ h1 {
 p {
 		background:#DCE0D9;
 		background: rgba(220,224,217,.5);
+		font-size: 165%;
 }
+
+/* unvisited link */
+a:link {
+    color: #92AD94;
+}
+
+/* visited link */
+a:visited {
+    color: #92AD94;
+}
+
+/* mouse over link */
+a:hover {
+    color: #503D42;
+}
+

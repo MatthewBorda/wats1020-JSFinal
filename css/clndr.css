@@ -117,7 +117,7 @@
 
 }
 #mini-clndr {
-  font-family: Asap, Helvetica, Arial;
+/*   font-family: Asap, Helvetica, Arial; */
   margin: 0 auto;
   width: 294px;
   -moz-box-shadow: 4px 4px 0 #343434;
@@ -126,10 +126,10 @@
 }
 #mini-clndr .clndr {
   overflow: hidden;
-  border-bottom: 7px solid #69a776;
+  border-bottom: 7px solid #31081F;
 }
 #mini-clndr .clndr .controls {
-  background-color: #69a776;
+  background-color: #31081F;
   color: white;
 }
 #mini-clndr .clndr .controls .clndr-previous-button,
@@ -222,7 +222,7 @@
   vertical-align: bottom;
 }
 #mini-clndr .clndr .days-container .days .headers {
-  background-color: #97ce7f;
+  background-color: #92AD94;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -249,7 +249,7 @@
 }
 #mini-clndr .clndr .days-container .events .event-header {
   width: 100%;
-  background-color: #97ce7f;
+  background-color: #92AD94;
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;

@@ -10,35 +10,36 @@ $( document  ).ready(function() {
 var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
 
 //Open street map layer	
-var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 18, attribution: osmAttrib});
+var osm = new L.TileLayer(osmUrl, {minZoom: 9, maxZoom: 12, attribution: osmAttrib});
 
 //Set view of map
 var map = L.map('map-container').setView([47.6553, -122.5350], 10);
 // Layer control box
 
 osm.addTo(map);
-  var circle = L.circle([47.6553, -122.5350], 10000, {
-    color: 'red',
-    fillColor: '#f03',
+  var circle = L.circle([47.6553, -122.5350], 18000, {
+    color: '#31081F',
+    fillColor: '#92AD94',
     fillOpacity: 0.5
 }).addTo(map);
-var marker = L.marker([51.5, -0.09]).addTo(map);	
+	var homeMarker = L.marker([47.6553, -122.5350]).addTo(map).bindPopup("<b>Sheep Dog Woodworking</b>").openPopup();	
+	
+	var gascoMarker = L.marker([47.6524573,-122.3660059]).addTo(map).bindPopup("<a href=http://www.gascoignelumber.com>Gascoigne Lumber</a>");	
+	var cedarMarker = L.marker([47.5934216,-122.7123389]).addTo(map).bindPopup("<a href=http://www.cedarproductsco.com>Cedar Products Co</a>");	
+	var smythMarker = L.marker([47.7713512,-122.5571909]).addTo(map).bindPopup("<a href=http://www.smythlumbermill.com>Smyth Lumber Mill</a>");	
+	var fritchMarker = L.marker([7.829139,-122.0981151]).addTo(map).bindPopup("<a href=http://www.fritchmill.com>Fritch Mill</a>");	
+	var secondMarker = L.marker([47.5747259,-122.3290035]).addTo(map).bindPopup("<a href=http://www.seconduse.com>Second Use</a>");	
+	var ewMarker = L.marker([47.5723921,-122.3320308]).addTo(map).bindPopup("<a href=http://www.ewsalvage.com>Earth Wise Architectural Salvage</a>");
+	var Marker = L.marker([47.6662128,-122.3817272]).addTo(map).bindPopup("<a href=http://www.ballardreuse.com>Ballard Reuse</a>");	
 
-// http://www.gascoignelumber.com/
-// http://www.cedarproductsco.com/
-// http://www.smythlumbermill.com/ 
-// http://www.fritchmill.com/
-//  http://www.dunnlumber.com/?utm_source=gp_sea&utm_medium=link&utm_campaign=d_glocal
-  //http://www.seconduse.com/
-// http://ewsalvage.com/  
-//   http://ballardreuse.com/
+
 
   
 // carousel
 var $myCarousel = $('#carousel-example-generic');
 
 // Initialize carousel
-$myCarousel.carousel();
+$myCarousel.carousel('cycle');
 	
   function doAnimations(elems) {
   var animEndEv = 'webkitAnimationEnd animationend';
@@ -119,40 +120,16 @@ $myCarousel.on('slide.bs.carousel', function (e) {
 	
 })(jQuery);  
 
-//   var currentMonth = moment().format('YYYY-MM');
-//   var nextMonth    = moment().add('month', 1).format('YYYY-MM');
-//   var events = [
-//     { date: currentMonth + '-' + '10', title: 'Persian Kitten Auction', location: 'Center for Beautiful Cats' },
-//     { date: currentMonth + '-' + '19', title: 'Cat Frisbee', location: 'Jefferson Park' },
-//     { date: currentMonth + '-' + '23', title: 'Kitten Demonstration', location: 'Center for Beautiful Cats' },
-//     { date: nextMonth + '-' + '07',    title: 'Small Cat Photo Session', location: 'Center for Cat Photography' }
-//   ];
 
-// $('#mini-clndr').clndr( {
-//     template: $('#calendar-template').html(),
-//     events: events,
-//     clickEvents: {
-//       click: function(target) {
-//         if(target.events.length) {
-//           var daysContainer = $('#mini-clndr').find('.days-container');
-//           daysContainer.toggleClass('show-events', true);
-//           $('#mini-clndr').find('.x-button').click( function() {
-//             daysContainer.toggleClass('show-events', false);
-//           });
-//         }
-//       }
-//     },
-//     adjacentDaysChangeMonth: true
-//   });
 	
 	  var currentMonth = moment().format('YYYY-MM');
   var nextMonth    = moment().add('month', 1).format('YYYY-MM');
 
   var events = [
-    { date: currentMonth + '-' + '10', title: 'Persian Kitten Auction', location: 'Center for Beautiful Cats' },
-    { date: currentMonth + '-' + '19', title: 'Cat Frisbee', location: 'Jefferson Park' },
-    { date: currentMonth + '-' + '23', title: 'Kitten Demonstration', location: 'Center for Beautiful Cats' },
-    { date: nextMonth + '-' + '07',    title: 'Small Cat Photo Session', location: 'Center for Cat Photography' }
+    { date: currentMonth + '-' + '04', title: 'First Friday Art Walk', location: 'Downtown Winslow, Bainbridge Island' },
+    { date: currentMonth + '-' + '19', title: 'Open House', location: 'Bainbridge Island Workshop' },
+    { date: currentMonth + '-' + '23', title: 'Finishing Wood Products Demo', location: 'Bainbridge Artists Resource Network (BARN)' },
+    { date: nextMonth + '-' + '01',    title: 'First Friday Art Walk', location: 'Downtown Winslow, Bainbridge Island' }
   ];
 
 
